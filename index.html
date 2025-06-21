@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Galería de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">TechStore</div>
+                <div class="device-indicator" data-device="Mobile"></div>
+                <div class="breadcrumb">Productos Gaming</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/pc-gamer.webp">
+                            <img src="./img/pc.webp" alt="PC Gamer Pro vista lateral con luces RGB" class="product-image" loading="lazy">
+                        </picture>
+                        <span class="product-badge">Nuevo</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">PC GAMER PRO</h3>
+                        <p class="product-description">Rendimiento extremo para jugar a 1440p a 240Hz.</p>
+                        <div class="product-price">
+                            <span class="original">COP 5,000.000</span> COP 3,500.000
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                            <button class="btn btn-secondary">Ver Detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img 
+                            class="product-image"
+                            src="./img/laptop.webp"
+                            srcset="
+                                laptop-400w.webp 
+                                laptop-800w.webp 
+                                laptop-1200w.webp 
+                            "
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            alt="Laptop Gaming RTX 4070 encendida"
+                            loading="lazy"
+                        >
+                        <span class="product-badge" style="background: var(--secondary);">Oferta</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Laptop Gaming RTX 4070</h3>
+                        <p class="product-description">i7, 32GB RAM, SSD 1TB y GPU RTX 4070.</p>
+                        <div class="product-price">
+                            <span class="original">COP 4,000.000</span> COP 3,200.000
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                            <button class="btn btn-secondary">Ver Detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <picture>
+                            <source type="image/webp" srcset="./img/teclado-gamer.webp">
+                            <source type="image/jpeg" srcset="./img/teclado.jpg">
+                            <img src="./img/teclado.jpg" alt="Auriculares Noise Cancelling Pro" class="product-image" loading="lazy">
+                        </picture>
+                        <span class="product-badge" style="background: var(--primary);">Premium</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Teclado Gamer</h3>
+                        <p class="product-description">Domina cada partida con este teclado mecánico gamer de alto rendimiento, diseñado para ofrecer precisión, velocidad y estilo.</p>
+                        <div class="product-price">COP 300.000</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                            <button class="btn btn-secondary">Ver Detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <div class="product-image-container monitor-image" role="img" aria-label="Monitor gamer 4K ultra ancho"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Monitor Gamer 4K</h3>
+                        <p class="product-description">Pantalla curva de 32″, 144Hz, HDR y tiempo de respuesta de 1ms.</p>
+                        <div class="product-price">COP 500.000</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                            <button class="btn btn-secondary">Ver Detalles</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
